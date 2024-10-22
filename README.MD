@@ -2,9 +2,13 @@
 
 16px (both mobile and desktop)
 
+## font-family:
+
+poppins
+
 ## titles font-family:
 
-poppins 
+sansita
 
 ## main colors:
     /* background */
