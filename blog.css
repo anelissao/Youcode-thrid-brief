@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap');
+
+html{
+    background-color: #EDFDFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --Sansita-font-family: "Sansita Swashed";
+    --Poppins-font-family: "Poppins";
+}
+
+h2 {
+    text-align: center;
+    color: #2C3B4C;
+    font-family : var(--Sansita-font-family);
+    font-size: 37px;
+}
+
+.cartres-principale {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 366px;
+    margin-inline: auto;
+}
+
+.carte-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    align-content: space-between;
+
+    background-color: #a6cff6;
+    /* width: 399px; */
+    /* height: 300px; */
+    
+    border-radius: 5px;
+
+}
+
+.image {
+    background-image: url(./Source/p-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 5px;
+    /* background-position: left top; */
+    width: 165px;
+    height: 150px;
+}
+
+.titre {
+
+    height: min-content;
+    color: #1C3BCC;
+    border-bottom: solid 1px black;
+    width: 190px;
+
+    position: absolute;
+    margin-left: 20px;
+}
+
