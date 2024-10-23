@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Youcode-thrid-brief",
+			"path": "."
+		},
+		{
+			"name": "Image-blog",
+			"path": "../Image-blog"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Youcode-thrid-brief"
+	}
+}
