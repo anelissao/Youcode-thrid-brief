@@ -27,3 +27,34 @@ h1 {
 }
 
 
+/****************************************/
+/*********** Card Our Clients  **********/
+/****************************************/
+.background {
+    background-color: var(--section-color);
+}
+
+.card {
+    padding: 20px;
+    border-radius: 0;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.card .rate i {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.card .user {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card .user img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: solid 2px #365ED0;
+}
