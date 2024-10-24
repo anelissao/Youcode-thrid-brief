@@ -25,6 +25,9 @@
 
     /* Text */
     --font-color: #626970;
+
+    /* box shadow */
+    --box-shadow: 3px 3px 5px var(--font-color);
 }
 
 /********* BLOBAL TAGS *********/
@@ -53,7 +56,6 @@ a {
 
 /* container */
 .container {
-    max-width: 600px;
     background-color: var(--background-color);
 }
 
@@ -127,5 +129,4 @@ input:focus {
 /* card */
 .card {
     border-radius: 6px;
-    box-shadow: 3px 3px 5px var(--font-color);
 }
