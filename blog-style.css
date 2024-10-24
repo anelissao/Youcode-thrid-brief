@@ -60,11 +60,19 @@
         & p:last-child {
             margin: 10px;
             text-align: center;
+            padding-top: 15px;
         }
     }
 
     & .col:last-child {
         height: 10%;
-        background-color: red;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 30px;
+
+        & p{
+            font-size: 20px;
+            color: black;
+        }
     }
 }
