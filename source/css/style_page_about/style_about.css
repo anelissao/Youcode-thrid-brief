@@ -64,7 +64,7 @@ h1 {
     padding: 30px 0;
 }
 
-.card {
+.background .card {
     padding: 20px;
     border-radius: 0;
     background-color: white;
@@ -97,6 +97,7 @@ h1 {
     border: solid 1px var(--secondary-color);
     box-shadow: 0 0 4px gray;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .card .card-our-team {
@@ -171,10 +172,12 @@ h1 {
     .card-about img {
         width: calc(55% - 10px);
         margin-bottom: 0;
+        box-shadow: none;
     }
 
     .card-about .card {
         width: calc(45% - 10px);
+        box-shadow: none;
     }
 
     .card-about .card p {
