@@ -11,14 +11,17 @@
 :root {
 
     /* background */
-    --background-color: #E4F2FF;
+    --background-color: #ECFCFE;
+    --section-color: #E4F2FF;
 
     /* primary color */
     --primary-color: #365ED0;
     --secondary-color: #27A4FF;
 
     /* color Title */
-    --font-color-title: #2C3B4C;
+    --color-title: #2C3B4C;
+    --size-title: 2.8rem;
+    --size-second-title: 1.7rem;
 
     /* Text */
     --font-color: #626970;
@@ -26,14 +29,14 @@
 
 /********* BLOBAL TAGS *********/
 h1 {
-    color: var(--font-color-title);
+    color: var(--color-title);
+    font-size: var(--size-title); 
     font-family: 'Sansita Swashed';
-    font-size: 56px; 
 }
 
 h2 {
-    color: var(--font-color-title);
-    font-size: 25px;
+    color: var(--color-title);
+    font-size: var(--size-second-title);
 }
 
 p {
@@ -48,18 +51,15 @@ a {
 }
 /********* END GLOBAL TAGS  ********/
 
-
-
 /* container */
 .container {
     max-width: 600px;
-    background-color: #626970;
+    background-color: var(--background-color);
 }
 
 /* column */
 .col {
     width: 90%;
-    background-color: var(--background-color);
     margin: auto;
 }
 
