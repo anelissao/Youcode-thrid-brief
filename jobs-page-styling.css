@@ -32,7 +32,7 @@ h1 {
 .container { 
     background-color: #ECFCFE;
     max-width: 100%;
-    height: 1000vh;
+    
 }
 .b {
     background-color: #85F3FF;
@@ -44,11 +44,17 @@ h1 {
 
     background-color: #ECFCFE;
 }
+.categories-section {
+    display: flex;
+    align-items: center;
+}
 .categories {
     display: flex;
     gap: .625rem .625rem;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    max-width: 60%;
 
 }
 .category {
