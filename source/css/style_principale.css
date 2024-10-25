@@ -30,7 +30,7 @@
     --box-shadow: 3px 3px 5px var(--font-color);
 }
 
-/********* BLOBAL TAGS *********/
+/********* GLOBAL TAGS *********/
 h1 {
     color: var(--color-title);
     font-size: var(--size-title); 
@@ -129,4 +129,282 @@ input:focus {
 /* card */
 .card {
     border-radius: 6px;
+}
+
+
+
+/*****************************************************/
+/*****************************************************/
+/******************* HEADER PHONE ********************/
+/*****************************************************/
+/*****************************************************/
+
+header {
+    background-color: #E4F2FF;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 1px 6px #00000075;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+}
+
+.navbar .menu ul a {
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: 0.6s;
+    color: white;
+}
+
+.navbar .menu ul a:hover {
+    transition: 0.6s;
+    color: #365ED0;
+}
+
+.navbar .logo img {
+    width: 80px;
+}
+
+ /********* Buttons Registration *********/
+ .registration .btn-login {
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: 0.6s;
+    color: #414141;
+    margin-right: 15px;
+}
+
+.registration .btn-login:hover {
+    transition: 0.6s;
+    color: #365ED0;
+}
+
+.registration .btn-rogister {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .toggle-menu span {
+        font-size: 40px;
+    }
+
+    .navbar .menu {
+        background-color: rgba(17, 24, 26, 0.778);
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.4s;
+    }
+
+    /* class display menu */
+    .navbar .display {
+        left: 0;
+    }
+
+    .menu ul li {
+        margin-bottom: 13px;
+    }
+
+    header .menu span {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .menu .registration {
+        margin-top: 30px;
+    }
+    .menu .registration .btn-login {
+        color: white;
+        margin-right: 10px;
+    }
+}
+
+/*****************************************************/
+/*****************************************************/
+/******************* FOOTER PHONE ********************/
+/*****************************************************/
+/*****************************************************/
+
+footer {
+    background-color: black;
+}
+
+.content-footer {
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-footer h2 {
+    text-align: start;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.content-footer p {
+    color: white;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footer-menu a {
+    font-size: 1rem;
+    color: white;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.438);
+}
+
+.copyright p {
+    padding: 20px;
+    text-align: center;
+    color: #737373;
+    font-size: 1rem;
+    font-weight: var(--font-weight);
+}
+
+/*****************************************************/
+/*****************************************************/
+/****************** HEADER DESKTOP *******************/
+/*****************************************************/
+/*****************************************************/
+
+@media (min-width: 1101px) {
+
+    /***********************************/
+    /********** desktop header *********/
+    /***********************************/
+    .navbar {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar .logo img {
+        width: 80px;
+    }
+    
+    .navbar .menu {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar .menu ul {
+        display: flex;
+    }
+    
+    .navbar .menu ul li {
+        margin-right: 30px;
+    }
+    
+    .navbar .menu ul a {
+        font-size: 1.3rem;
+        font-weight: 500;
+        transition: 0.6s;
+        color: #414141;
+    }
+    
+    .navbar .menu ul a:hover {
+        transition: 0.6s;
+        color: #365ED0;
+    }
+
+    /****** Burger menu ******/
+    .toggle-menu {
+        display: none;
+    }
+
+    .menu span {
+        display: none;
+    }
+
+    .card-about {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .card-about img {
+        width: calc(55% - 10px);
+        margin-bottom: 0;
+    }
+
+    .card-about .card {
+        width: calc(45% - 10px);
+    }
+
+    .card-about .card p {
+        line-height: 1.8;
+        text-align: start;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        margin: 0;
+        width: 100%;
+    }
+
+    .our-team .cards-team {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .cards-team .card .card-our-team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-team .card .card-our-team img {
+        margin-bottom: 20px;
+    }
+
+    .info-user {
+        text-align: center;
+    }
+
+    /* footer desktop */
+    .content-footer {
+        padding: 35px 0;
+        display: flex;
+        justify-content: space-around;
+    }
 }
