@@ -1,26 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e6f0fa; 
-    
+   
+    background: rgba(237, 253, 255, 1);
+
+   
+    margin: 0;
 }
 .card-form {
+    
     width: 95%; 
     margin: 0 auto; /* Centre la carte */
+    /* margin-top: 150px; */
     
  
 }
 
 .contact-form {
-    background: #f0f8ff;
+    background: rgba(228, 242, 255, 1);
     padding: 20px;
     border-radius: 20px;  
    
 }
 
 .contact-form h2 {
-    font-family: "Sansita Swashed", system-ui; 
+    
     text-align: center;
     font-size: 34px;
     font-weight: bold;
@@ -55,6 +57,7 @@ body {
 }
 h1{
     font-size: 40px;
+    margin-bottom: 40px;
 }
 .icon-back {
     width: 50px;
@@ -81,6 +84,7 @@ h1{
 }
 
 .contact-container {
+    
     padding: 20px;
     text-align: center;
     font-family: "Sansita Swashed", system-ui; 
@@ -108,7 +112,7 @@ h1{
  .contact-map {
     padding: 20px;
     position: relative;
-    width: 87%;
+    width: 96%;
     margin: 30px auto;
     border-radius: 20px;
     background-color: white;
@@ -134,7 +138,9 @@ iframe{
     font-size: 35px;
     color: #333;
 } 
-
+.global{
+    margin-top: 170px;
+}
 @media (min-width: 700px) {
     .contact-box {
         width: 90%;
@@ -146,7 +152,7 @@ iframe{
         width: 650px;
     }
     .card-form {
-        
+        /* margin-top: 100px; */
         display: flex;
         justify-content: center;
         
@@ -160,6 +166,11 @@ iframe{
     }
     .contact-form h2{
         font-size: 42px;
+    }
+    .contact-map {
+       
+        width: 91%;
+        
     }
     
 }
