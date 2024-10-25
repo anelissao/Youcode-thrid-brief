@@ -1,0 +1,300 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Sansita Swashed",system-ui ;
+    margin-top: 4.6875rem;
+    font-size: 30px;
+    width: 100%;
+    padding: 45px;
+    text-align: center;
+}
+@keyframes appear {
+    from {
+
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+
+        to {
+            opacity: 1;
+            clip-path: inset(0 0 0 0);
+            
+        }
+    }
+    
+}
+
+.container { 
+    background-color: #ECFCFE;
+    max-width: 100%;
+    
+}
+.b {
+    background-color: #85F3FF;
+}
+.w {
+    background-color: white;
+}
+.jobs-section {
+
+    background-color: #ECFCFE;
+}
+.categories-section {
+    display: flex;
+    align-items: center;
+}
+.categories {
+    display: flex;
+    gap: .625rem .625rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 60%;
+
+}
+.category {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+}
+.category > i {
+    color:#626970;
+    padding: 5px .1875rem 1.875rem;
+}
+
+.categories-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.email-section {
+    background-color:#0EB7F0;
+    height: 200px; 
+    display: flex;
+    margin: 4.375rem 0;;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.email-section div:nth-child(2){
+    
+    align-self: flex-end;
+    margin: 0 1.25rem;
+
+}
+.email-section > div p{
+    color: initial;
+    font-weight: bold;
+    padding-top: .9375rem;
+    padding-left: .9375rem;
+    font-size: 30px;
+}
+.email-section > div input {
+    border: none;
+    height:40px;
+    display: flex;
+    align-self: center;
+    padding-left: .5rem;
+    font-weight: bold;
+
+}
+.email-section > div:nth-child(2) {
+    background-color: white;
+    display: flex;
+    width:300px;
+}
+.email-section button {
+    width: 75px;
+    height: 25px;
+    font-size: 12px;
+    background-color:#0EB7F0;
+    margin:0;
+    padding-right: 5px;
+    align-self: center;
+    text-align: center;
+    font-weight: 600;
+}
+.categories-section > button {
+    width:200px;
+    height:32px;
+    align-self: center;    
+    margin: 30px 0;
+    background-color: #1d54ed;
+
+}
+.jobInfo p:first-child{
+    color:initial;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.jobInfo p:nth-child(2) {
+    font-size:11px
+}
+.offers {
+    margin-top: .775rem;
+    width: 90%;
+    margin-left: 5%;
+    display:flex; 
+    justify-content: space-between;
+    gap: 10px 10px;
+}
+header {
+   z-index: 2;
+}
+
+.offerCarte  {
+
+    animation: appear linear;
+    display: flex;
+    flex-direction: column;
+    animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 50%;
+    padding: .625rem;
+    height: auto;
+    box-shadow: 2px 2px #626970;
+}
+ button {
+    width: 70%;
+    height: 24px;
+    transition: 0.6s;
+    font-size: 15px;
+    background-color:#365ED0;
+    margin-left: 15% ;
+    margin-bottom:3% ;
+    border-radius: .3125rem;
+    border:none; 
+}
+button:hover {
+    cursor:pointer;
+    box-shadow: 3px 3px #626970;
+    transform:scale(1.01);
+    transition:0.6s;
+
+}
+a {
+    color:white;
+}
+.location {
+    padding-left: 5px;
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+.location i {
+    margin-top: 4px;
+    padding-right: 5px;
+}
+.offerCarte img {
+    width:30px;
+}
+.company {
+    display: flex;
+    height: 50px;
+    margin:5px;
+    
+}
+.company > div p:first-child{
+    margin-left: .5rem;
+    font-size: 1rem;
+    color: initial;
+    font-weight: bold; 
+}
+.company > div p:nth-child(2)
+{
+    margin-left: 5px;
+    font-size: 13px;
+}
+@media screen and (max-width:750px) {
+    .offers {
+        display: grid;
+        grid-template-areas: " c1r1 c2r1 ";
+    }
+    .offerCarte {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .offers {
+        display:flex;
+        flex-wrap:wrap;
+        margin-right: 5%;
+    }
+
+    .category {
+        animation: appear linear;
+        animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+    }
+
+    .offerCarte {
+        width: 100%;
+        margin:5px 0;
+        height: auto;
+        
+    }
+    .offerCarte > p:first-child{
+        margin: 8px;
+        background-color: #0EB7F0;
+        width: 90%;
+        height: 13px;
+        text-align: center;
+        font-size:10px;
+    }
+    .offerCarte > p:nth-child(3) {
+        color:#626970;
+        font-family: sans-serif;
+        font-size: 13px;
+        width: 90%;
+        padding: 5px 0 5px 0;
+        
+        }
+        .location {
+            width: 60%;
+        }
+    
+}
+.fpr {
+    display: flex;
+    gap: 0px 5px;
+}
+.fpr > p{
+            margin-top: 8px;
+            background-color: #0EB7F0;
+            width: 62px;
+            height: 13px;
+            text-align: center;
+            font-size:10px;
+        }
+
+.offerCarte > p:nth-child(2) {
+            margin-left: .5rem;
+            font-size: 1rem;
+            color: initial;
+            font-weight: bold;
+            
+        }
+
+.offerCarte  > p:nth-child(3) {
+            color:#626970;
+            font-family: sans-serif;
+            font-size: 13px;
+            padding: 5px 0 5px 5px;
+            
+            }
+
+            
+
+
+
+
