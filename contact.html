@@ -4,56 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="source/css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="source/css/style_principale.css">
+    <link rel="stylesheet" href="source/css/contact.css">
 </head>
 <body>
-    <section class="card-form">
-        <div class="contact-form">
-               <h2>Contact</h2>
-            <form>
-                <input type="text" placeholder="Nom complet" name="fullName" required>
-                <input type="email" placeholder="Email" name="email" required>
-                <input type="tel" placeholder="Phone" name="phone">
-                <textarea placeholder="Message" name="message" rows="4" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-      </section>
-    <section class="contact-container">
-        <h1>Get in touch</h1>
-        <div class="contact-box">
-            <div class="contact-phone">
-                <div class="icon-back">
-                    <i class="fa-solid fa-phone"></i>
+    <div class="container">
+
+        <!-- header -->
+        <header>
+            <div class="col">
+                <div class="navbar">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="source/img/logo/logo-rekrute.png" alt=" logo Rekrute">
+                        </a>
+                    </div>
+                    
+                    <!-- List navbar -->
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index">Home</a></li>
+                            <li><a href="jobs-page.html">Jobs</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="blog.html">Blogs</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+
+                            <span class="close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                        </ul>
+
+                        <div class="registration">
+                            <a class="btn-login" href="login.html">Login</a>
+                            <a class="btn btn-rogister" href="register.html">Register</a>
+                        </div>
+                    </div>
+
+                    <div class="toggle-menu">
+                        <span class="burger">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </div>
                 </div>
-                <h3>ReKrute Maroc</h3>
-                <p><span>Standard:</span> +212 674 300 300 &nbsp; +212 522 50 51 53</p>
-                <h3>ReKrute Tunisie</h3>
-                <p><span>Standard:</span> +216 71 818 434 &nbsp; +216 55 555 444</p>
             </div>
-            <div class="contact-mail">
-                <div class="icon-back">
-                    <i class="fa-solid fa-envelope"></i>
+        </header>
+        <section class="global">
+        <section class="card-form">
+            <div class="contact-form">
+                   <h2>Contact</h2>
+                <form>
+                    <input type="text" placeholder="Nom complet" name="fullName" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="tel" placeholder="Phone" name="phone">
+                    <textarea placeholder="Message" name="message" rows="4" class="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+          </section>
+        <section class="contact-container">
+            <h1>Get in touch</h1>
+            <div class="contact-box">
+                <div class="contact-phone">
+                    <div class="icon-back">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>ReKrute Maroc</h3>
+                    <p><span>Standard:</span> +212 674 300 300 &nbsp; +212 522 50 51 53</p>
+                    <h3>ReKrute Tunisie</h3>
+                    <p><span>Standard:</span> +216 71 818 434 &nbsp; +216 55 555 444</p>
                 </div>
-                <h3>ReKrute Maroc</h3>
-                <p>Candidats: <a href="mailto:contact@ReKrute.com">contact@ReKrute.com</a></p>
-                <p>Recruteurs: <a href="mailto:client@ReKrute.com">client@ReKrute.com</a></p>
-                <h3>ReKrute Tunisie</h3>
-                <p>Candidats: <a href="mailto:information@ReKrute.com">information@ReKrute.com</a></p>
-                <p>Recruteurs: <a href="mailto:recrutement@ReKrute.com">recrutement@ReKrute.com</a></p>
+                <div class="contact-mail">
+                    <div class="icon-back">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>ReKrute Maroc</h3>
+                    <p>Candidats: <a href="mailto:contact@ReKrute.com">contact@ReKrute.com</a></p>
+                    <p>Recruteurs: <a href="mailto:client@ReKrute.com">client@ReKrute.com</a></p>
+                    <h3>ReKrute Tunisie</h3>
+                    <p>Candidats: <a href="mailto:information@ReKrute.com">information@ReKrute.com</a></p>
+                    <p>Recruteurs: <a href="mailto:recrutement@ReKrute.com">recrutement@ReKrute.com</a></p>
+                </div>
             </div>
-        </div>
-		<div class="contact-map">
-            <div class="icon-back">
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851029.8763548097!2d-8.862151521874996!3d33.570638500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d0dfbffffff%3A0xa281a60b42983898!2sReKrute!5e0!3m2!1sfr!2sma!4v1729709969286!5m2!1sfr!2sma" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <div class="contact-map">
+                <div class="icon-back">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851029.8763548097!2d-8.862151521874996!3d33.570638500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d0dfbffffff%3A0xa281a60b42983898!2sReKrute!5e0!3m2!1sfr!2sma!4v1729709969286!5m2!1sfr!2sma" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> 
             </div> 
-        </div> 
+        </section>
     </section>
+        <!-- footer -->
+        <footer>
+            <div class="col">
+                <div class="content-footer">
+                    <div class="about-us">
+                        <h2>About Us</h2>
+                        <p>(212) 070005109</p>
+                        <p>companyrekrute@gmail.com</p>
+                        <p>46000 Safi Morocco</p>
+                    </div>
+                    <div class="footer-menu">
+                        <h2>Menu</h2>
+                        <a href="index.html">Home</a>
+                        <a href="jobs-page.html">Jobs</a>
+                        <a href="about.html">About us</a>
+                        <a href="blog.html">Blogs</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="copyright">
+                    <p>&copy; 2024 Rekrute. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./source/js/app.js"></script>
 </body>
 </html>
