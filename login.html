@@ -3,30 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-<link rel="stylesheet" href="source/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="source/css/style_principale.css">
+    <link rel="stylesheet" href="source/css/login.css">
 </head>
 <body>
-  <div class="login">
-    <div class="title"><span>Login </span></div>
-    <form action="#">
-      <div class="row">
-        <i class="fas fa-user"></i>
-        <input type="text" placeholder="Email or Phone" required />
-      </div>
-      <div class="row">
-        <i class="fas fa-lock"></i>
-        <input type="password" placeholder="Password" required />
-      </div>
-      <div class="pass"><a href="#">Forgot password?</a></div>
-      <div class="row button">
-        <input type="submit" value="Login" />
-      </div>
-      <div class="signup-link">Not a member? <a href="register.html">Register</a></div>
-    </form>
-  </div>
+    <div class="container">
+
+        <!-- header -->
+        <header>
+            <div class="col">
+                <div class="navbar">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="source/img/logo/logo-rekrute.png"logo Rekrute">
+                        </a>
+                    </div>
+                    
+                    <!-- List navbar -->
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact</a></li>
+
+                            <span class="close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                        </ul>
+
+                        <div class="registration">
+                            <a class="btn-login" href="">Login</a>
+                            <a class="btn btn-rogister" href="">Register</a>
+                        </div>
+                    </div>
+
+                    <div class="toggle-menu">
+                        <span class="burger">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="login">
+              <div class="title"><span>Login </span></div>
+              <form action="#">
+                <div class="row">
+                  <i class="fas fa-user"></i>
+                  <input type="text" placeholder="Email or Phone" required class="input"/>
+                </div>
+                <div class="row">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Password" required />
+                </div>
+                <div class="pass"><a href="#">Forgot password?</a></div>
+                <div class="row button">
+                  <input type="submit" value="Login"  class="centered-button"/>
+                </div>
+                <div class="signup-link">Not a member? <a href="register.html">Register</a></div>
+              </form>
+            </div>
+            <div class="right-img">
+              <img src="source/img/img.png" alt="">
+            </div>
+       </div>
+        <!-- footer -->
+        <footer>
+            <div class="col">
+                <div class="content-footer">
+                    <div class="about-us">
+                        <h2>About Us</h2>
+                        <p>(212) 070005109</p>
+                        <p>companyrekrute@gmail.com</p>
+                        <p>46000 Safi Morocco</p>
+                    </div>
+                    <div class="footer-menu">
+                        <h2>Menu</h2>
+                        <a href="#">Home</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">About us</a>
+                        <a href="#">Blogs</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="copyright">
+                    <p>&copy; 2024 Rekrute. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./source/js/app.js"></script>
 </body>
 </html>
