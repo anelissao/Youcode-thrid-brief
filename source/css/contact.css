@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
 body {
    
-    background-color: #e6f0fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.card-form {
-    width: 95%; 
-    margin: 0 auto; /* Centre la carte */
-body {
-   
     background: rgba(237, 253, 255, 1);
 
    
