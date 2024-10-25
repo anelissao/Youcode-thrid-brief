@@ -74,7 +74,52 @@ h1 {
     flex-direction: column;
     justify-content: center;
 }
+.email-section {
+    background-color:#0EB7F0;
+    height: 200px; 
+    display: flex;
+    margin: 4.375rem 0;;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.email-section div:nth-child(2){
+    
+    align-self: flex-end;
+    margin: 0 1.25rem;
 
+}
+.email-section > div p{
+    color: initial;
+    font-weight: bold;
+    padding-top: .9375rem;
+    padding-left: .9375rem;
+    font-size: 30px;
+}
+.email-section > div input {
+    border: none;
+    height:40px;
+    display: flex;
+    align-self: center;
+    padding-left: .5rem;
+    font-weight: bold;
+
+}
+.email-section > div:nth-child(2) {
+    background-color: white;
+    display: flex;
+    width:300px;
+}
+.email-section button {
+    width: 75px;
+    height: 25px;
+    font-size: 12px;
+    background-color:#0EB7F0;
+    margin:0;
+    padding-right: 5px;
+    align-self: center;
+    text-align: center;
+    font-weight: 600;
+}
 .categories-section > button {
     width:200px;
     height:32px;
