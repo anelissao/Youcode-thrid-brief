@@ -75,16 +75,14 @@ h1 {
     justify-content: center;
 }
 .email-section {
-    background-color:#0EB7F0;
-    height: 200px; 
+    background-color: #0EB7F0;
     display: flex;
-    margin: 4.375rem 0;;
-    flex-direction: column;
+    margin: 4.375rem 0;
     justify-content: space-around;
 }
 .email-section div:nth-child(2){
     
-    align-self: flex-end;
+    align-self: center;
     margin: 0 1.25rem;
 
 }
