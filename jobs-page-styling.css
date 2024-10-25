@@ -34,14 +34,59 @@ h1 {
     max-width: 100%;
     height: 1000vh;
 }
-
+.b {
+    background-color: #85F3FF;
+}
+.w {
+    background-color: white;
+}
 .jobs-section {
 
     background-color: #ECFCFE;
 }
+.categories {
+    display: flex;
+    gap: .625rem .625rem;
+    justify-content: center;
+    flex-wrap: wrap;
 
+}
+.category {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+}
+.category > i {
+    color:#626970;
+    padding: 5px .1875rem 1.875rem;
+}
+
+.categories-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categories-section > button {
+    width:200px;
+    height:32px;
+    align-self: center;    
+    margin: 30px 0;
+    background-color: #1d54ed;
+
+}
+.jobInfo p:first-child{
+    color:initial;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.jobInfo p:nth-child(2) {
+    font-size:11px
+}
 .offers {
-    margin-top: 2.775rem;
+    margin-top: .775rem;
     width: 90%;
     margin-left: 5%;
     display:flex; 
@@ -134,8 +179,15 @@ a {
         flex-wrap:wrap;
         margin-right: 5%;
     }
+
+    .category {
+        animation: appear linear;
+        animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+    }
+
     .offerCarte {
-        width: 90%;
+        width: 100%;
         margin:5px 0;
         height: auto;
         
