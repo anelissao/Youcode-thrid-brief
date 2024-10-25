@@ -190,7 +190,7 @@ header {
     border-radius: 6px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1100px) {
 
     .navbar {
         display: flex;
@@ -299,7 +299,7 @@ footer {
 /*****************************************************/
 /*****************************************************/
 
-@media (min-width: 1200px) {
+@media (min-width: 1101px) {
 
     /***********************************/
     /********** desktop header *********/
