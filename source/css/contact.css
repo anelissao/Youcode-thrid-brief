@@ -31,12 +31,19 @@ body {
 .contact-form input,
 .contact-form textarea {
     width: 95%; 
+    max-width: 95%;
+    min-width: 95%;
     padding: 12px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
    
+}
+.contact-form textarea{
+    max-height: 150px;
+    min-height: 150px;
+
 }
 
 .contact-form button {
